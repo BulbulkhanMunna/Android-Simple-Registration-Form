@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeDetailsActivity">
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empAgeValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Skills:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empSkillValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empGenValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="City:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empCityValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date of birth:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/empDobValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/showPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="1.88"/>
+
+        <ImageView
+            android:id="@+id/callIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_call"
+            android:background="@color/black"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            style="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/showEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            style="?android:textAppearanceMedium"
+            android:textColor="#000"
+            android:layout_weight="1.88"/>
+
+        <ImageView
+            android:id="@+id/mailIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/sym_action_email"
+            android:background="@color/black"/>
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:onClick="updateEmployee"/>
+    </TableRow>
+
+</TableLayout>

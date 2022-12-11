@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/empName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee name: "/>
+
+    <EditText
+        android:id="@+id/empAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee age: "/>
+
+    <EditText
+        android:id="@+id/empphnone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee phone: "
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/empEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee email: "
+        android:inputType="textEmailAddress"/>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skills"
+        android:gravity="center"
+        android:background="#ccc"
+        style="?android:textAppearanceLarge"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        >
+
+        <CheckBox
+            android:id="@+id/javaCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_weight="1"
+            android:onClick="SelectLanguage"
+            />
+
+        <CheckBox
+            android:id="@+id/cCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_weight="1"
+            android:onClick="SelectLanguage"/>
+
+        <CheckBox
+            android:id="@+id/cpulsCB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:layout_weight="1"
+            android:onClick="SelectLanguage"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+    <CheckBox
+        android:id="@+id/phpCB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="PHP"
+        android:layout_weight="1"
+        android:onClick="SelectLanguage"/>
+
+    <CheckBox
+        android:id="@+id/jscCB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:layout_weight="1"
+        android:onClick="SelectLanguage"/>
+
+    <CheckBox
+        android:id="@+id/kotCB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="kotlin"
+        android:layout_weight="1"
+        android:onClick="SelectLanguage"/>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:gravity="center"
+        android:background="#ccc"
+        style="?android:textAppearanceLarge"/>
+
+    <RadioGroup
+        android:id="@+id/genderRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/femaleRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/empDob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:layout_weight="2"
+            android:onClick="selectDate"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select City"
+        android:gravity="center"
+        android:background="#ccc"
+        style="?android:textAppearanceLarge"/>
+    <Spinner
+
+        android:id="@+id/citySP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Register"
+         android:textAllCaps="false"
+         android:onClick="registerEmployee"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
